@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FiPhone, FiMail, FiInstagram, FiMapPin, FiSend, FiCheck } from 'react-icons/fi';
+import { FiPhone, FiMail, FiInstagram, FiSend, FiCheck } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 import * as Yup from 'yup';
 import { useFormik } from 'formik';

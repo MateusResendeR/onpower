@@ -1,5 +1,16 @@
 import { z } from 'zod';
-import { ADMINISTRATION_ROUTES } from '../components/clinicComponents/MedicationsComponets/AssociateMedicianalMoral.tsx';
+
+export const ADMINISTRATION_ROUTES = [
+  'Oral',
+  'Intravenosa',
+  'Intramuscular',
+  'Subcutânea',
+  'Tópica',
+  'Nasal',
+  'Ocular',
+  'Retal',
+  'Sublingual'
+] as const;
 
 export const medicationAssociationSchema = z.object({
   
@@ -25,7 +36,7 @@ export const medicationAssociationSchema = z.object({
   
   administrationRoute: z.string()
     .min(1, { message: "Via de administração é obrigatória" })
-    .refine(val => ADMINISTRATION_ROUTES.includes(val), { 
+    .refine(val => ADMINISTRATION_ROUTES.includes(val as any), { 
       message: "Via de administração inválida" 
     }),
   

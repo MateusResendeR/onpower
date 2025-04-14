@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ComposableMap, Geographies, Geography } from 'react-simple-maps';
 import { motion } from 'framer-motion';
 
@@ -35,7 +35,7 @@ const partnersData: PartnersData = {
 
 const Partners = () => {
   const [selectedState, setSelectedState] = useState<string | null>(null);
-  const [hoveredState, setHoveredState] = useState<string | null>(null);
+  const [, setHoveredState] = useState<string | null>(null);
 
   const handleStateClick = (stateCode: string) => {
     console.log('Clicked state:', stateCode);
