@@ -37,7 +37,7 @@ const Home = () => {
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
-              className="lg:w-1/2 mb-12 lg:mb-0 pl-8"
+              className="lg:w-1/2 mb-12 lg:mb-0"
             >
               <div className='flex flex-row'>
                 <h1 className="text-5xl font-bold text-gray-800 mb-6 text-center md:text-left ">
@@ -66,7 +66,7 @@ const Home = () => {
               <img 
                 src="/totem.png"
                 alt="Care" 
-                className="rounded-xl ml-9 transform hover:scale-105 transition-transform duration-300"
+                className="rounded-xl md:ml-9 transform hover:scale-105 transition-transform duration-300"
               />
             </motion.div>
 
@@ -235,23 +235,23 @@ const Home = () => {
               whileInView={{ opacity: 1 }}
               className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 mt-16 text-center"
             >
-              <div className="p-6 bg-gray-100 rounded-xl">
+              <div className="p-6 bg-gray-100 rounded-xl mx-auto w-full max-w-xs">
                 <div className="text-black text-3xl font-bold mb-2">R$14.285,00</div>
                 <div className="text-gray-600">Investimento inicial</div>
               </div>
-              <div className="p-6 bg-gray-100 rounded-xl">
+              <div className="p-6 bg-gray-100 rounded-xl mx-auto w-full max-w-xs">
                 <div className="text-black text-3xl font-bold mb-2">R$399,00</div>
                 <div className="text-gray-600">Royalties Mensais</div>
               </div>
-              <div className="p-6 bg-gray-100 rounded-xl">
+              <div className="p-6 bg-gray-100 rounded-xl mx-auto w-full max-w-xs">
                 <div className="text-black text-3xl font-bold mb-2">A partir do 7° mês</div>
                 <div className="text-gray-600">Payback</div>
               </div>
-              <div className="p-6 bg-gray-100 rounded-xl">
+              <div className="p-6 bg-gray-100 rounded-xl mx-auto w-full max-w-xs">
                 <div className="text-black text-3xl font-bold mb-2">A partir do 3° mês</div>
                 <div className="text-gray-600">Break Even</div>
               </div>
-              <div className="p-6 bg-gray-100 rounded-xl">
+              <div className="p-6 bg-gray-100 rounded-xl mx-auto w-full max-w-xs">
                 <div className="text-black text-3xl font-bold mb-2">5%</div>
                 <div className="text-gray-600">Royalties Fixos</div>
               </div>
