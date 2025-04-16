@@ -169,7 +169,7 @@ const Home = () => {
                         <ul className="list-disc pl-5 mt-2 space-y-2">
                           <li>Cooperativismo</li>
                           <li>Transparência</li>
-                          <li>Faciliatador de sonhos</li>
+                          <li>Facilitador de sonhos</li>
                           <li>Inclusividade</li>
                         </ul>
                       </p>
@@ -222,7 +222,7 @@ const Home = () => {
                     <div>
                       <h4 className="font-bold mb-2">Vantagens para o Franqueado</h4>
                       <p className="text-sm opacity-90">
-                      Franqueados desfrutam de um modelo de negócios lucrativo e escalável, com suporte completo da franquia, treinamento especializado e acesso a uma marca consolidada no mercado. Beneficiam-se de receita passiva gerada por anúncios e parcerias, além de oportunidades de expansão com baixo custo operacional, garantindo um investimento seguro e potencial de retorno acelerado.
+                      Franqueados desfrutam de um modelo de negócios lucrativo e escalável, com suporte completo da franqueadora, treinamento especializado e acesso a uma marca consolidada no mercado. Beneficiam-se de receita passiva gerada por anúncios e parcerias, além de oportunidades de expansão com baixo custo operacional, garantindo um investimento seguro e potencial de retorno acelerado.
                       </p>
                     </div>
                   </div>
