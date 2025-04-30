@@ -276,9 +276,9 @@ const Home = () => {
           </div>
           <div className="container mx-auto px-4 relative z-10">
             <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
               className="text-center max-w-3xl mx-auto"
             >
               <h2 className="text-4xl font-bold text-black mb-6">Seja um Design Parceiro</h2>

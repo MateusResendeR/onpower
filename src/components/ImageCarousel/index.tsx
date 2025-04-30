@@ -18,11 +18,11 @@ export function ImageCarousel({ images }: ImageCarouselProps) {
     setActiveIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
-  // Adiciona a mudança automática a cada 2 segundos
+  // Adiciona a mudança automática a cada 3 segundos
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 4000);
+    }, 3000);
 
     // Limpa o intervalo quando o componente é desmontado
     return () => clearInterval(interval);
@@ -36,8 +36,12 @@ export function ImageCarousel({ images }: ImageCarouselProps) {
         {images.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 w-full h-full transition-transform duration-500 ease-in-out ${
-              index === activeIndex ? 'translate-x-0' : 'translate-x-full'
+            className={`absolute inset-0 w-full h-full transition-all duration-700 ease-in-out ${
+              index === activeIndex 
+                ? 'translate-x-0 opacity-100' 
+                : index < activeIndex 
+                  ? '-translate-x-full opacity-0' 
+                  : 'translate-x-full opacity-0'
             }`}
           >
             <div className="flex items-center justify-center h-full">
